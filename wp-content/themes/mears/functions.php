@@ -14,6 +14,16 @@ function mears_google_fonts() {
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Open+Sans:700,300', array(), 1.0 );
 }
 
+
+//* Enqueue and Load Font Awesome
+ 
+add_action( 'wp_enqueue_scripts', 'afn_enqueue_awesome' );
+function afn_enqueue_awesome() {
+	if ( !is_admin() ) {
+		wp_enqueue_style( 'afn-font-awesome', get_bloginfo( 'stylesheet_directory' ) . '/css/font-awesome.min.css', array(), '4.0.3' );
+	}
+}
+
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
@@ -46,3 +56,22 @@ genesis_register_sidebar( array(
 	'name'        => __( 'About Section', 'mears' ),
 	'description' => __( 'This is the second section of the home page.', 'mears' ),
 ) );
+
+//* Customize the post info function
+add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+function sp_post_info_filter($post_info) {
+if ( !is_page() ) {
+	$post_info = ' ';
+	return $post_info;
+}}
+
+
+//* Removes comments in the galleries
+function filter_media_comment_status( $open, $post_id ) {
+    $post = get_post( $post_id );
+    if( $post->post_type == 'attachment' ) {
+        return false;
+    }
+    return $open;
+}
+add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
