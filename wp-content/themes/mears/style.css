@@ -1367,9 +1367,10 @@ h4.widget-title {
   height:50px;
   width:50px;
 	transition: 0.4s ease;
+	box-shadow: 0 1px 3px rgba(42, 41, 54, 0.5);
 }
 .down-arrow:hover {
-	box-shadow: 0 0 10px #2b2937;
+	box-shadow: 0 3px 10px rgba(42, 41, 54, 0.8);
 }
 
 /* Portfolio Section */
@@ -1520,23 +1521,21 @@ a,
 	color: #FCFFF5;
 }
 
-
 .footer-widgets {
 	background-color: #2B2937;
 }
 .footer-widgets,
-.footer-widgets a {
+.footer-widgets a,
+.site-header a:hover {
 	color: #999;
 }
 
 .footer-widgets a.button,
-.footer-widgets a:hover {
+.footer-widgets a:hover,
+.home .entry-title a {
 	color: #fff;
 }
 
-.home .entry-title a {
-	color: #FFF;
-}
 
 
 
