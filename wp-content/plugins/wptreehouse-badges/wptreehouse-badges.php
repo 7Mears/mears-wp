@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  * Plugin Name: Mears Treehouse Badges Plugin
  * Plugin URI: http://wptreehouse.com/wptreehouse-badges-plugin/
@@ -11,19 +11,27 @@
 */
 
 /*
- * Add a link to our plugin in the admin menu
- * under 'Settings > Treehouse Badges'
+ * Assign global variables
  *
 */
+$plugin_url = WP_PLUGIN_URL . '/wptreehouse-badges';
+$options = array();
+
+/*
+* Add a link to our plugin in the admin menu
+* under 'Settings > Treehouse Badges'
+*
+*/
+
 
 function wptreehouse_badges_menu() {
-	
+
 	/*
 	 * Use the add_options_page function
 	 * add_options_page( $page_title, $menu_title, $capability, $menu-slug, $function )
 	 *
 	*/
-	
+
 	add_options_page (
 		'Mears Treehouse Badges Plugin',
 		'Treehouse Badges',
@@ -31,7 +39,7 @@ function wptreehouse_badges_menu() {
 		'wptreehouse-badges',
 		'wptreehouse_badges_options_page'
 	);
-	
+
 }
 
 add_action( 'admin_menu', 'wptreehouse_badges_menu' );
@@ -40,16 +48,48 @@ add_action( 'admin_menu', 'wptreehouse_badges_menu' );
 	function wptreehouse_badges_options_page() {
 
 	if( !current_user_can( 'manage_options' ) ) {
-	
+
 		wp_die( 'You do not have sufficient permissions to access this page.' );
-	
+
 	}
-	
-	echo '<p>Welcome to our plugin page!</p>';
-	
+
+	global $plugin_url;
+	global $options;
+
+	if( isset( $_POST['wptreehouse_form_submitted'] ) ) {
+
+		$hidden_field = esc_html( $_POST['wptreehouse_form_submitted'] );
+
+		if( $hidden_field == 'Y') {
+
+			$wptreehouse_username = esc_html( $_POST['wptreehouse_username'] );
+
+			$options['wptreehouse_username'] 		= $wptreehouse_username;
+			$options['last_updated'] 						= time();
+
+			update_option( 'wptreehouse_badges', $options );
+
+		}
+
+	}
+
+	$options = get_option( 'wptreehouse_badges' );
+
+	if( $options != '' ) {
+
+		$wptreehouse_username = $options['wptreehouse_username'];
+
+	}
+
+	require( 'inc/options-page-wrapper.php' );
+
 }
 
+function wptreehouse_badges_styles() {
 
+	wp_enqueue_style( 'wptreehouse_badges_styles', plugins_url( 'wptreehouse-badges/wptreehouse-badges.css' ) );
 
+}
+add_action ( 'admin_head', 'wptreehouse_badges_styles' );
 
 ?>

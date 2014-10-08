@@ -4,12 +4,12 @@
 	Description: A mobile responsive and HTML5 theme built for the Genesis Framework.
 	Author: Jordan Mears
 	Author URI: http://www.jordanmears.com/
-	
+
 	Version: 1.0
- 
+
 	Template: genesis
 	Template Version: 2.1
- 
+
 	License: GPL-2.0+
 	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
@@ -125,7 +125,7 @@ input[type="search"] {
 
 /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
- 
+
 html,
 body {
 	height: 100%;
@@ -1328,7 +1328,7 @@ h4.widget-title {
 }
 
 .site-container, /* Needed for fullscren on featured section */
-.wrap { 
+.wrap {
 	height: 100%;
 }
 
@@ -1336,7 +1336,38 @@ h4.widget-title {
 .hero-section {
 	min-height: 100%;
 	padding-top: 200px;
-	background: url('images/stardust.png');
+	/*background: url('images/stardust.png');*/
+
+
+background: linear-gradient(125deg, #2b2937, #588c8c);
+background-size: 200% 200%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+-z-animation: AnimationName 20s ease infinite;
+-o-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .hero-section .wrap {
@@ -1351,6 +1382,21 @@ h4.widget-title {
 	width: 100%;
 	padding: 200px 0;
 	font-size: 20px;
+}
+
+.bounce {
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 50%;
+	padding-top: 5px;
+  position:absolute;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+	transition-timing-function: ease-in;
+  -webkit-animation:bounce 2s infinite;
 }
 
 /* Portfolio Section */
@@ -1429,8 +1475,8 @@ footer {
 }
 /* Single Page
 --------------------------------------------- */
-.sidebar { 
-	margin-bottom: -7px; /* Fix for inline-block extra spacing */ 
+.sidebar {
+	margin-bottom: -7px; /* Fix for inline-block extra spacing */
 	padding-top: 50px;
 }
 
@@ -1551,7 +1597,7 @@ a,
 	.footer-widgets-1 {
 		margin-right: 30px;
 	}
-	
+
 	.portfolio-section .post,
 	.about-section .one-third,
 	.footer-widgets-1,
@@ -1635,7 +1681,7 @@ a,
 	.footer-widgets-1 {
 		margin-right: 0;
 	}
-	
+
 	.portfolio-section .post,
 	.about-section .one-third,
 	.footer-widgets-1,
@@ -1692,7 +1738,7 @@ a,
 	.sidebar .widget.enews-widget {
 		padding: 40px;
 	}
-	
+
 	.mugshot {
 	height: 200px;
 	width: 200px;
@@ -1701,29 +1747,14 @@ a,
 }
 
 
-/* # Animation
+/* # Animations
 ---------------------------------------------------------------------------------------------------- */
-
-.bounce {
-	background-color: rgba(255,255,255,0.2);
-	border-radius: 50%;
-	padding-top: 5px;
-  position:absolute;
-  left:50%;
-  bottom:0;
-  margin-top:-25px;
-  margin-left:-25px;
-  height:50px;
-  width:50px;
-	transition-timing-function: ease-in;
-  -webkit-animation:bounce 2s infinite;
-}
 
 @-webkit-keyframes bounce {
   0%{
     bottom:0;
   }
-	
+
   50% {
   	bottom: 20px;
   }
