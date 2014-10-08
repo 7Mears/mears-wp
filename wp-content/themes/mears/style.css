@@ -1348,12 +1348,15 @@ h4.widget-title {
 }
 
 .hero-section .textwidget {
-	display: inline-block;
+	/*display: inline-block;
 	display: table-cell;
 	vertical-align: middle;
-	width: 100%;
-	padding: 200px 0;
+	width: 100%;*/
 	font-size: 20px;
+}
+.hero-section .textwidget span {
+	font-size: 24px;
+	font-weight: 700;
 }
 
 .down-arrow {
