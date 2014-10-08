@@ -1348,10 +1348,6 @@ h4.widget-title {
 }
 
 .hero-section .textwidget {
-	/*display: inline-block;
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;*/
 	font-size: 20px;
 }
 .hero-section .textwidget span {
