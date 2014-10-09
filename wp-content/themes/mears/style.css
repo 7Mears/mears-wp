@@ -1349,6 +1349,7 @@ h4.widget-title {
 
 .hero-section .textwidget {
 	font-size: 20px;
+	padding-top: 100px;
 }
 .hero-section .textwidget span {
 	font-size: 24px;
@@ -1711,8 +1712,12 @@ a,
 	}
 
 	.mugshot {
-	height: 200px;
-	width: 200px;
-}
+		height: 200px;
+		width: 200px;
+	}
+
+	.hero-section .textwidget {
+		padding-top: 0px;
+	}
 
 }
