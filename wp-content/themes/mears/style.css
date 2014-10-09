@@ -1351,9 +1351,15 @@ h4.widget-title {
 	font-size: 20px;
 	padding-top: 100px;
 }
+
 .hero-section .textwidget span {
 	font-size: 24px;
 	font-weight: 700;
+}
+
+.fa-angle-down {
+	width: 100%;
+	height: 100%;
 }
 
 .down-arrow {
@@ -1367,10 +1373,10 @@ h4.widget-title {
   height:50px;
   width:50px;
 	transition: 0.4s ease;
-	box-shadow: 0 1px 3px rgba(42, 41, 54, 0.5);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 .down-arrow:hover {
-	box-shadow: 0 3px 10px rgba(42, 41, 54, 0.8);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* Portfolio Section */
@@ -1434,7 +1440,7 @@ h4.widget-title {
 .footer-widgets-3 {
 	background-color: rgba(0,0,0,0.2);
 }
-.footer-widgets-1 .fa-lg {
+.footer-widgets-1 .fa-2x {
 	padding-right: 5px;
 }
 footer {
