@@ -1394,11 +1394,11 @@ h4.widget-title {
 	left: 0;
 	width: 100%;
 	min-height: 100%;
-	opacity: 0;
+	opacity: 0.1;
 	transition: 0.4s ease-out;
 }
 .portfolio-section .post img:hover {
-	opacity: 0.2;
+	opacity: 1;
 }
 
 .portfolio-section .post p {
