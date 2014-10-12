@@ -1337,8 +1337,12 @@ h4.widget-title {
 .hero-section {
 	min-height: 100%;
 	padding-top: 200px;
-	background: linear-gradient(180deg, #2b2937, #588c8c);
-	background-size: 100%;
+
+  background: -webkit-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
+  background:    -moz-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
+  background:     -ms-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
+  background:      -o-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
+  background:         linear-gradient(90deg, #588c8c 10%, #2b2937 90%); 
 
 }
 
@@ -1530,8 +1534,7 @@ a,
 .footer-widgets {
 	background-color: #2B2937;
 }
-/*.footer-widgets,*/
-.footer-widgets a,
+
 .site-header a:hover {
 	color: #FF6138;
 }
