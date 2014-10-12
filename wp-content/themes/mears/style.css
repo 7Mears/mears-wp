@@ -1530,10 +1530,10 @@ a,
 .footer-widgets {
 	background-color: #2B2937;
 }
-.footer-widgets,
+/*.footer-widgets,*/
 .footer-widgets a,
 .site-header a:hover {
-	color: #999;
+	color: #FF6138;
 }
 
 .footer-widgets a.button,
