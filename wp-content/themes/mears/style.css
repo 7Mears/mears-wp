@@ -1391,7 +1391,9 @@ h4.widget-title {
 	overflow: hidden;
 	min-height: 420px;
 }
-
+.portfolio-section .entry-header {
+	padding-bottom: 25px;
+}
 .portfolio-section .post img {
 	position: absolute;
 	top: 0;
