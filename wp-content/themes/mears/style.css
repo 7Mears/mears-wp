@@ -504,7 +504,7 @@ th {
 .content {
 	float: right;
 /*	width: 800px;*/
-		width: 60%;
+		width: 50%;
 }
 
 .content-sidebar .content,
@@ -528,7 +528,7 @@ th {
 .sidebar-primary {
 	float: right;
 /*	width: 360px;*/
-	width: 40%;
+	width: 50%;
 }
 
 .sidebar-content .sidebar-primary,
@@ -1392,7 +1392,7 @@ h4.widget-title {
 	min-height: 420px;
 }
 .portfolio-section .entry-header {
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 }
 .portfolio-section .post img {
 	position: absolute;
@@ -1480,6 +1480,7 @@ footer {
 .sidebar {
 	margin-bottom: -7px; /* Fix for inline-block extra spacing */
 	padding-top: 50px;
+
 }
 
 .sidebar img {
@@ -1528,9 +1529,11 @@ h6,
 .home .entry-title a,
 a,
 .genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover
+ {
 	color: #FCFFF5;
 }
+
 
 
 /* # Media Queries
