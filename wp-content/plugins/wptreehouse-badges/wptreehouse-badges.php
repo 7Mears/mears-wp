@@ -64,7 +64,10 @@ add_action( 'admin_menu', 'wptreehouse_badges_menu' );
 
 			$wptreehouse_username = esc_html( $_POST['wptreehouse_username'] );
 
+			$wptreehouse_profile = wptreehouse_badges_get_profile( $wptreehouse_username );
+
 			$options['wptreehouse_username'] 		= $wptreehouse_username;
+			$options['wptreehouse_profile']			= $wptreehouse_profile;
 			$options['last_updated'] 						= time();
 
 			update_option( 'wptreehouse_badges', $options );
@@ -78,10 +81,24 @@ add_action( 'admin_menu', 'wptreehouse_badges_menu' );
 	if( $options != '' ) {
 
 		$wptreehouse_username = $options['wptreehouse_username'];
+		$wptreehouse_profile = $options['wptreehouse_profile'];
 
 	}
 
 	require( 'inc/options-page-wrapper.php' );
+
+}
+
+function wptreehouse_badges_get_profile( $wptreehouse_username ) {
+
+	$json_feed_url = 'http://teamtreehouse.com/' . $wptreehouse_username . '.json';
+	$args = array( 'timeout' => 120 );
+
+	$json_feed = wp_remote_get ( $json_feed_url, $args );
+
+	$wptreehouse_profile = json_decode ( $json_feed['body'] );
+
+	return $wptreehouse_profile;
 
 }
 
