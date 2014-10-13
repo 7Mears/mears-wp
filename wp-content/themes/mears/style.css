@@ -1338,11 +1338,11 @@ h4.widget-title {
 	min-height: 100%;
 	padding-top: 200px;
 
-  background: -webkit-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
-  background:    -moz-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
-  background:     -ms-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
-  background:      -o-linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
-  background:         linear-gradient(90deg, #588c8c 10%, #2b2937 90%);
+  background: -webkit-linear-gradient(0deg, #046380 10%, #2b2937 90%);
+  background:    -moz-linear-gradient(0deg, #046380 10%, #2b2937 90%);
+  background:     -ms-linear-gradient(0deg, #046380 10%, #2b2937 90%);
+  background:      -o-linear-gradient(0deg, #046380 10%, #2b2937 90%);
+  background:         linear-gradient(0deg, #046380 10%, #2b2937 90%);
 
 }
 
@@ -1391,7 +1391,9 @@ h4.widget-title {
 	overflow: hidden;
 	min-height: 420px;
 }
-
+.portfolio-section .entry-header {
+	padding-bottom: 25px;
+}
 .portfolio-section .post img {
 	position: absolute;
 	top: 0;
@@ -1492,37 +1494,21 @@ footer {
 ---------------------------------------------------------------------------------------------------- */
 
 body,
-li.comment,
-.form-allowed-tags,
-
 input,
 select,
 textarea,
-.footer-widgets button:hover,
-.footer-widgets input:hover[type="button"],
-.footer-widgets input:hover[type="reset"],
-.footer-widgets input:hover[type="submit"],
-.footer-widgets .button:hover,
-.archive-description,
-.author-box,
-.enews-widget input:hover[type="submit"],
-.genesis-nav-menu .sub-menu a,
-.nav-secondary,
 .content .entry,
-.comment-respond,
-.entry-comments,
-.entry-pings,
 .sidebar .widget,
 .site-footer,
-
 .hero-section,
 .about-section {
-	background-color: #588C8C;
+	background-color: #046380;
 	color: #EBF2F0;
 }
 
 .portfolio-section .post:nth-child(4),
-.portfolio-section .post:nth-child(3) {
+.portfolio-section .post:nth-child(3),
+.footer-widgets {
 	background-color: #2B2937;
 }
 
@@ -1537,31 +1523,14 @@ h3,
 h4,
 h5,
 h6,
-
 .site-title a,
 .entry-title a:hover,
+.home .entry-title a,
 a,
-
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
 	color: #FCFFF5;
 }
-
-.footer-widgets {
-	background-color: #2B2937;
-}
-
-.site-header a:hover {
-	color: #FF6138;
-}
-
-.footer-widgets a.button,
-.footer-widgets a:hover,
-.home .entry-title a {
-	color: #fff;
-}
-
-
 
 
 /* # Media Queries
