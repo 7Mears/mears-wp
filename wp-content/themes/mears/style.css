@@ -176,7 +176,7 @@ a {
 }
 
 a:hover {
-	color: #333;
+	color: #D13F32;
 }
 
 p {
@@ -339,12 +339,12 @@ img {
 
 /* ## Forms
 --------------------------------------------- */
-
 input,
 select,
 textarea {
 	background-color: #fff;
-	border: 1px solid #ddd;
+	border: 0;
+	border-bottom: 1px solid #ddd;
 	color: #333;
 	font-size: 18px;
 	font-weight: 300;
@@ -354,7 +354,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-	border: 1px solid #999;
+	border: 0;
+	border-bottom: 1px solid #999;
 	outline: none;
 }
 
@@ -407,6 +408,7 @@ input:hover[type="submit"],
 .button:hover {
 	background-color: #4d4a63;
 	color: #fff;
+	border: 0;
 	border-bottom: 3px solid #2B2937;
 }
 
@@ -900,7 +902,7 @@ img.alignright,
 
 .site-title a,
 .site-title a:hover {
-	color: #333;
+	color: #D13F32;
 }
 
 .header-image .site-title > a {
@@ -961,7 +963,7 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #333;
+	color: #D13F32;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1061,7 +1063,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .current-menu-item > a,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #e5554e;
+	color: #D13F32;
 }
 
 /* ## Secondary Navigation
@@ -1432,7 +1434,7 @@ h4.widget-title {
 				position:absolute;
         top:25px;
         left:85px;
-    }
+}
 
 /* About Section */
 .about-section h3 {
@@ -1540,29 +1542,6 @@ a,
 ---------------------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
-
-	.content-sidebar-sidebar .content-sidebar-wrap,
-	.sidebar-content-sidebar .content-sidebar-wrap,
-	.sidebar-sidebar-content .content-sidebar-wrap {
-		width: 740px;
-	}
-
-	.content,
-	.site-header .widget-area {
-		width: 620px;
-	}
-
-	.sidebar-content-sidebar .content,
-	.sidebar-sidebar-content .content,
-	.content-sidebar-sidebar .content {
-		width: 400px;
-	}
-
-	.sidebar-primary,
-	.title-area {
-		width: 300px;
-	}
-
 	.footer-widgets-1 {
 		margin-right: 30px;
 	}

@@ -16,7 +16,7 @@ function mears_google_fonts() {
 
 
 //* Enqueue and Load Font Awesome
- 
+
 add_action( 'wp_enqueue_scripts', 'afn_enqueue_awesome' );
 function afn_enqueue_awesome() {
 	if ( !is_admin() ) {
