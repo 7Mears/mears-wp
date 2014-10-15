@@ -348,8 +348,7 @@ textarea {
 	color: #333;
 	font-size: 18px;
 	font-weight: 300;
-	padding: 16px;
-	width: 100%;
+	padding: 20px 5px 5px 5px;
 }
 
 input:focus,
@@ -1383,6 +1382,7 @@ h4.widget-title {
 }
 .down-arrow:hover {
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: scale(1.1);
 }
 
 /* Portfolio Section */
@@ -1476,7 +1476,15 @@ footer {
 	height: 250px;
 	padding: 10px;
 	width: 250px;
+
+	transition: 0.4s ease;
 }
+
+.mugshot:hover {
+	padding: 0;
+	border: 5px solid rgba(255,255,255,0.4);
+}
+
 /* Single Page
 --------------------------------------------- */
 .sidebar {
