@@ -1338,12 +1338,13 @@ h4.widget-title {
 .hero-section {
 	min-height: 100%;
 	padding-top: 200px;
-
-  background: -webkit-linear-gradient(0deg, #046380 10%, #2b2937 90%);
+	background: url('images/blur_bg.jpg');
+	background-size: cover;
+  /*background: -webkit-linear-gradient(0deg, #046380 10%, #2b2937 90%);
   background:    -moz-linear-gradient(0deg, #046380 10%, #2b2937 90%);
   background:     -ms-linear-gradient(0deg, #046380 10%, #2b2937 90%);
   background:      -o-linear-gradient(0deg, #046380 10%, #2b2937 90%);
-  background:         linear-gradient(0deg, #046380 10%, #2b2937 90%);
+  background:         linear-gradient(0deg, #046380 10%, #2b2937 90%);*/
 
 }
 
