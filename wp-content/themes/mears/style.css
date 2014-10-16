@@ -176,7 +176,7 @@ a {
 }
 
 a:hover {
-	color: #D13F32;
+	color: #EFC94C;
 }
 
 p {
@@ -901,7 +901,7 @@ img.alignright,
 
 .site-title a,
 .site-title a:hover {
-	color: #D13F32;
+	color: #EFC94C;
 }
 
 .header-image .site-title > a {
@@ -962,7 +962,7 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #D13F32;
+	color: #EFC94C;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1062,7 +1062,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .current-menu-item > a,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #D13F32;
+	color: #EFC94C;
 }
 
 /* ## Secondary Navigation
