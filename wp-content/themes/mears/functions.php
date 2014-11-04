@@ -11,7 +11,7 @@ define( 'CHILD_THEME_VERSION', '1.0' );
 add_action( 'wp_enqueue_scripts', 'mears_google_fonts' );
 function mears_google_fonts() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat|Open+Sans:700,400', array(), 1.0 );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat', array(), 1.0 );
 }
 
 //* Add HTML5 markup structure
