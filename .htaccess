@@ -1,3 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /mears-wp/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /mears-wp/index.php [L]
+</IfModule>
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
