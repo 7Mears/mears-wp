@@ -81,14 +81,34 @@ h6 { font-size: 16px; }
 input,
 select,
 textarea {
+	border-color: rgba(0,0,0,0.1);
 	background-color: #ECF0F1;
-	border: 2px solid #999;
-	padding: 10px;
+	display: block;
+	width: 100%;
+	padding: 1em 1.5em;
+	border: 2px solid;
+	clear: both;
+
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	-webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
 input:focus,
 textarea:focus {
-	border: 2px solid #3498DB;
+	outline: none;
+  border-color: rgba(0,0,0,0.15);
+	background-color: #FFF;
+  -webkit-box-shadow: 0 0 20px #cccccc;
+  -moz-box-shadow: 0 0 20px #cccccc;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
 button,
@@ -103,7 +123,11 @@ input[type="submit"],
 	border: 2px solid #E74C3C;
 	border-radius: 12.5px;
 	color: #E74C3C;
-	transition: 0.4s ease;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
 
 button:hover,
@@ -165,7 +189,11 @@ input:hover[type="submit"],
 	display: block;
 	padding: 10px 20px;
 	border-radius: 12.5px;
-	transition: 0.4s ease;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
 
 .genesis-nav-menu a:hover,
@@ -223,7 +251,11 @@ input:hover[type="submit"],
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	transition: 0.6s;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 	-webkit-mask-image: -webkit-linear-gradient(bottom, #ECF0F1 0%, rgba(0,0,0,0) 80%);
 }
 
@@ -286,7 +318,7 @@ input:hover[type="submit"],
 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 800px) {
 
 	.site-header {
 		background-color: rgba(255,255,255,0);
@@ -316,5 +348,11 @@ input:hover[type="submit"],
 	.single-post img {
 		width: 100%;
 		padding-bottom: 50px;
+	}
+
+	#ninja_forms_form_3_cont {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
 }
