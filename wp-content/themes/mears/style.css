@@ -305,7 +305,6 @@ input:hover[type="submit"],
 #ninja_forms_form_3_cont {
 	width: 500px;
 	margin: 0 auto;
-	box-sizing: border-box;
 }
 
 /* ## Media queries
