@@ -223,10 +223,10 @@ input:hover[type="submit"],
 #portfolio .widget_text {
 	background-color: rgba(255,255,255,0.5);
 	padding: 50px;
-	clear: both;
 	position: relative;
 	overflow: hidden;
 }
+
 #portfolio .dashicons {
 	font-size: 200px;
 	color: #ECF0F1;
@@ -234,6 +234,7 @@ input:hover[type="submit"],
 	right: 90px;
 	top: -25px;
 }
+
 /* ## Portfolio Section
 --------------------------------------------- */
 #portfolio .post {
