@@ -210,7 +210,17 @@ input:hover[type="submit"],
 }
 
 #hero h2 {
-	padding: 150px 50px 12.5px 50px;
+	padding: 100px 50px;
+	position: relative;
+}
+#hero h2:before {
+	content: "";
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	background: #3498DB;
+	width: 50px;
+	height: 5px;
 }
 
 #hero p:nth-child(3) {
@@ -265,12 +275,11 @@ input:hover[type="submit"],
 }
 
 #portfolio .entry-header {
-	padding: 50px 50px 0 50px;
+	padding: 50px;
 }
 
 #portfolio .entry-content {
-	padding: 25px 50px;
-
+	padding: 0 50px;
 }
 
 
