@@ -325,6 +325,10 @@ input:hover[type="submit"],
 		width: 50%;
 	}
 
+	#hero h2:before {
+		display: none;
+	}
+
 }
 
 @media only screen and (max-width: 800px) {
