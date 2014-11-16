@@ -14,6 +14,12 @@ function mears_google_fonts() {
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat', array(), 1.0 );
 }
 
+//* Add custom Viewport meta tag for mobile browsers
+add_action( 'genesis_meta', 'sp_viewport_meta_tag' );
+function sp_viewport_meta_tag() {
+	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
+}
+
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
